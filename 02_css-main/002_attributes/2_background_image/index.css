@@ -1,0 +1,25 @@
+/* ========== 여기에 CSS를 작성하세요 ========== */
+/*
+요구사항: index.html 상단 주석을 참고하여 배경 이미지를 적용하세요.
+- background-image, background-repeat, background-position, background-size 를 사용합니다.
+- 히어로와 카드 이미지 영역에 각각 적절한 배경을 넣어 주세요.
+*/
+
+.hero {
+}
+
+.card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 50px auto 0;
+}
+
+.card-image {
+}
+
+.card-content {
+  padding: 20px;
+  text-align: center;
+}

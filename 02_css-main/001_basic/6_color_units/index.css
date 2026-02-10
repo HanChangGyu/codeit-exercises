@@ -1,0 +1,15 @@
+/* ========== 여기에 CSS를 작성하세요 ========== */
+/*
+요구사항: 아래 네 개의 박스에 각각 지정된 색상 단위로 배경색(background-color)을 넣어 주세요.
+
+1. .box-keyword  → 색상 키워드 사용 (예: blue, red, green 중 하나)
+
+2. .box-hex      → HEX 코드 사용. 파란색 (#0000FF 또는 단축 #00F)
+
+3. .box-rgb      → rgb() 함수 사용. 초록색 (빨강0, 초록128, 파랑0 → rgb(0, 128, 0))
+
+4. .box-rgba     → rgba() 함수 사용. 빨간색이면서 투명도 50% (Alpha 0.5)
+                   → rgba(255, 0, 0, 0.5)
+
+공통: 네 박스 모두 padding: 16px, border-radius: 8px, color: white (글자색)
+*/
