@@ -14,3 +14,30 @@
 
 6. .box-viewport → width: 80vw;  padding: 16px;
 */
+.box-px {
+  width: 300px;
+  height: 80px;
+}
+
+.parent {
+  width: 400px;
+  padding: 16px;
+}
+
+.child {
+  width: 50%;
+  padding: 12px;
+}
+
+.text-rem {
+  font-size: 1.5rem;
+}
+
+.btn-em {
+  padding: 1em 1.5em;
+}
+
+.box-viewport {
+  width: 80vw; /* 화면 전체기준 */
+  padding: 16px;
+}
