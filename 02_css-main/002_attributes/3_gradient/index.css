@@ -18,13 +18,17 @@
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
-
+.gradient-btn:hover {
+  background-image: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
 .stripe-box {
   width: 200px;
   height: 100px;
   margin-top: 20px;
   border: 1px solid #ddd;
+  background-image: linear-gradient(to right, #ff9a9e 50%, #fad0c4 50%);
 }
 
 .card {
@@ -38,4 +42,7 @@
   padding: 20px;
   color: white;
   background-size: cover;
+  background-image:
+    linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8)),
+    url("https://picsum.photos/300/200");
 }
