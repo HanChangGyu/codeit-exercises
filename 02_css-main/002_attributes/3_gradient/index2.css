@@ -1,0 +1,48 @@
+/* 카드를 화면 정중앙에 배치하기 위한 바디 설정 */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+}
+
+/* 1. VIP 카드 본체 */
+.vip-card {
+  width: 320px;
+  padding: 40px 20px;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  transition: 0.4s; /* 호버 변신을 위한 마법 조미료 */
+  background-image: linear-gradient(135deg, #141e30, #243b55);
+  /* [미션 1] 밤하늘 우주 느낌의 그라디언트를 배경으로 깔아주세요! 
+     (방향: 대각선 135도 / 색상: 어두운 파란색 #141e30 에서 검은색 #243b55 으로) */
+}
+
+/* 2. 황금 뱃지 */
+.badge {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  color: #333; /* 글자는 어둡게 */
+  margin-bottom: 20px;
+  background-image: linear-gradient(to right, #f6d365, #fda085);
+  /* [미션 2] 반짝이는 황금색 그라디언트를 배경으로 깔아주세요!
+     (방향: 오른쪽으로 / 색상: 노란색 #f6d365 에서 주황색 #fda085 으로) */
+}
+
+/* 3. 마우스 호버 효과 */
+.vip-card:hover {
+  background-image: linear-gradient(to left, #f6d365, #fda085);
+  transform: translateY(-10px);
+  box-shadow:
+    0 15px 30px,
+    rgba(0, 0, 0, 0.5);
+  /* [미션 3] 마우스를 올렸을 때, 카드가 위로 살짝(한 10px 정도) 떠오르게 만드세요.
+     (힌트: transform: translateY(-10px); 사용) */
+
+  /* [미션 4] 떠오르면서 바닥에 진한 그림자가 생기게 만드세요.
+     (힌트: box-shadow: 0 15px 30px rgba(0,0,0,0.5); 사용) */
+}
