@@ -18,6 +18,13 @@
 }
 
 .avatar {
+  width: 80px;
+  height: 80px;
+  background-image: url("https://picsum.photos/80");
+  background-size: cover; /* 사진이 찌그러지지않게 상자에 꽉 차도록 조절 */
+  border-radius: 50%; /* 네모난 나무 상자를 깎아서 동그라미로 만듬 50% */
+  border: 3px solid white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .status {
@@ -32,7 +39,21 @@
 }
 
 .input-underline {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #ccc;
 }
 
 .btn-capsule {
+  padding: 10px 30px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  font-weight: bold;
+  cursor: pointer;
 }
