@@ -1,0 +1,63 @@
+/* [1] 무대 배경 세팅 - 그림자가 잘 보이게 판을 깔아주는 거야 */
+body {
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.stage {
+  display: flex;
+  flex-direction: column;
+  gap: 60px; /* 요소들끼리 서로 그림자를 가리지 않게 간격을 넓힘*/
+  align-items: center;
+}
+
+/* [미션 1] 붕 떠 있는 카드 */
+.profile-card {
+  width: 250px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  /* 힌트: 아래쪽으로 살짝 내리고, blur를 아주 넉넉히(15px 이상) 줘봐! */
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* [미션 2] 안으로 파인 입력창 */
+.search-bar {
+  width: 250px;
+  padding: 15px;
+  border: none;
+  border-radius: 50px;
+  background-color: #e4e6e9;
+  outline: none;
+  /* 힌트: 'inset' 키워드를 쓰고, 숫자를 아주 작게(2~5px) 시작해봐! 
+  뒤의 0.3 부분 알파 부분을 수정할수록 깊이가 달라진다*/
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* [미션 3] 네온 발광 버튼 */
+.glow-btn {
+  padding: 15px 40px;
+  background-color: #1a1a1a;
+  color: #0f0;
+  border: 2px solid #0f0;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  /* 힌트: 평소에는 빛이 하나만 나게 해볼까? */
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* 마우스를 올렸을 때 더 밝아지게! */
+.glow-btn:hover {
+  /* 힌트: 쉼표(,)를 써서 3개 정도 겹쳐봐! 점점 커지는 숫자로! */
+  box-shadow:
+    0 0 10px #0f0,
+    0 0 20px #0f0,
+    0 0 35px #0f0;
+}
