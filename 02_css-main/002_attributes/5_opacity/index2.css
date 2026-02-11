@@ -1,0 +1,65 @@
+/* [기본 배경 세팅] 투명도를 확인하려면 뒤에 그림이 있어야 해! */
+body {
+  background-image: url("https://picsum.photos/800/600");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background: white; /* 컨테이너 자체는 흰색 배경 */
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.test-box {
+  width: 300px;
+  padding: 20px;
+  color: white; /* 글자색은 흰색 */
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* [미션 1] 전체가 투명해지는 상자 */
+.opacity-mode {
+  background-color: black;
+  /* 여기에 전체 투명도 0.5를 줘봐 */
+  opacity: 0.5;
+}
+
+/* [미션 2] 배경만 투명해지는 상자 */
+.rgba-mode {
+  /* 여기에 배경색만 50% 투명한 검정(rgba)으로 칠해봐 
+    백그라운드 컬러를 이용해서 배경만 투명하게, 글자는 선명하게*/
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* [공통 버튼 스타일] */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* [미션 3] 비활성화 버튼 표현 */
+.btn.disabled {
+  /* 여기에 40% 투명도와 금지(not-allowed) 커서를 넣어봐 */
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* [미션 4] 호버 시 투명도 변화 */
+.hover-me:hover {
+  /* 마우스를 올리면 80% 정도만 보이게(0.8) 설정해봐 */
+  opacity: 0.8;
+}
