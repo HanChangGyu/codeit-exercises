@@ -25,6 +25,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .input-box {
@@ -36,6 +37,7 @@ body {
   outline: none;
   display: block;
   margin-bottom: 20px;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .neon-btn {
@@ -47,4 +49,12 @@ body {
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
+  box-shadow: 0 0 10px #0f0;
+  text-shadow: 0 0 5px #0f0;
+}
+.neon-btn:hover {
+  box-shadow:
+    0 0 10px #0f0,
+    0 0 20px #0f0,
+    0 0 40px #0f0;
 }
