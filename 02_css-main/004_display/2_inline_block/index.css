@@ -1,4 +1,10 @@
 /* ========== 여기에 CSS를 작성하세요 ========== */
 
 .nav-item {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  margin-right: 5px;
 }
