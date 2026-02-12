@@ -17,10 +17,14 @@
 }
 
 .visible {
+  overflow: visible; /* 내용물이 많아도 다 보여주는 */
+  margin-bottom: 50px;
 }
 
 .hidden {
+  overflow: hidden; /*  정해진 상자 높이를 넘쳐서 글자가 나올 경우 자름*/
 }
 
 .auto {
+  overflow: auto; /* 넘치면 스크롤 바가 생김 */
 }
