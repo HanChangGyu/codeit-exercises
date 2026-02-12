@@ -1,0 +1,30 @@
+.container {
+  text-align: center;
+  padding: 50px;
+}
+
+.feature-card {
+  /* [미션 1] 이 카드들이 옆으로 나란히 서게 만드세요. 
+     단, 블록처럼 크기를 가질 수 있는 성격이어야 합니다. */
+  display: inline-block;
+
+  /* [미션 2] 각 카드의 크기를 설정하세요. */
+  width: 200px;
+  height: 150px;
+
+  /* [미션 3] 카드와 카드 사이에 '최소한의 예의 거리'를 주세요. */
+  margin-right: 10px;
+
+  /* [미션 4] 글자가 상자 테두리에 딱 붙지 않게 '안쪽 여백'을 주세요. */
+  padding: 20px;
+
+  /* 디자인 요소 (이건 내가 미리 넣어둘게!) */
+  background-color: white;
+  border: 2px solid #333;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px #333;
+}
+
+.feature-card h3 {
+  color: #ff6b6b;
+}
