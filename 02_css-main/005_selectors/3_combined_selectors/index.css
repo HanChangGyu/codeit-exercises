@@ -2,10 +2,22 @@
 /* .alert.success, .alert.warning 처럼 붙여 써서 AND 조건으로 선택하세요. */
 
 .alert {
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
 .alert.success {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  color: #155724;
 }
 
 .alert.warning {
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+  color: #856404;
 }
