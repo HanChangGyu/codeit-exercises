@@ -1,0 +1,78 @@
+/* 기본 세팅 */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f5f5f5;
+  /* [힌트] 미션 1을 완료한 뒤, 헤더가 본문을 가리지 않게 하려면 여기에 어떤 처리가 필요할까? */
+  padding-top: 60px;
+}
+
+/* 미션 1: .main-header (화면 박제 마법)
+  - 높이 60px, 배경색 하얀색, 너비 꽉 차게
+  - 요구사항: 사용자가 스크롤을 내려도 항상 화면 맨 위에 고정되어야 함.
+  - 힌트: '유리창에 붙인 주차권 스티커'를 떠올려봐! (f____)
+*/
+.main-header {
+  height: 60px;
+  background-color: white;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* 여기에 코드를 작성해봐 */
+  position: fixed;
+  top: 0; /* fixed를 사용할 때 맨 위 왼쪽 끝에 꽉차려면 세트로 작성*/
+  left: 0;
+  width: 100%;
+}
+
+/* 미션 2: .alert-card (기준점 잡기)
+  - 가로/세로 200px, 배경 하얀색, 중앙 정렬
+  - 요구사항: 안에 들어올 배지(.badge)가 길을 잃지 않게 '기준점'이 되어줘야 함.
+  - 힌트: '엄마 새'의 품이 필요해! (r_______)
+*/
+.alert-card {
+  width: 200px;
+  height: 200px;
+  background: white;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* 여기에 코드를 작성해봐 */
+  position: relative;
+}
+
+/* 미션 3: .badge (자유로운 알림 배지)
+  - 크기 30px, 배경 빨간색, 글자 하얀색
+  - 요구사항: 카드(.alert-card)의 오른쪽 위 모서리에 살짝 걸치도록 배치해.
+  - 힌트: 엄마 새(Relative)를 기준으로 자유롭게 날아다니는 '아기 새'! (a_______)
+  - 좌표 힌트: top과 right를 마이너스(-) 값으로 주면 밖으로 살짝 삐져나와.
+*/
+.badge {
+  width: 30px;
+  height: 30px;
+  background-color: #ff4444;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+  /* 여기에 코드를 작성해봐 */
+  position: absolute;
+  top: -10px; /* 값을 내릴수록 위로 올라간다*/
+  right: -10px; /* 값을 내릴수록  오른쪽으로 간다*/
+}
+
+.spacer {
+  height: 2000px; /* 스크롤 테스트용 */
+  text-align: center;
+  padding-top: 50px;
+  color: #ccc;
+}
