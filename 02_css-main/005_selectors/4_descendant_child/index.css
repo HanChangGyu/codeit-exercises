@@ -7,5 +7,12 @@ ul {
 }
 
 /* .menu 안의 모든 li */
-
+.menu li {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
 /* .menu의 직계 ul > 직계 li (메인 메뉴만) */
+.menu > ul > li {
+  font-weight: bold;
+  color: navy;
+}
