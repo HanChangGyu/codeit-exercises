@@ -2,5 +2,22 @@
 /* 쉼표(,)로 선택자 목록을 만들어 공통 스타일을 적용하세요. */
 
 /* 공통: button, .btn-primary, input[type="submit"] */
-
+button,
+.btn-primary,
+input[type="submit"] {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+}
 /* 색상: .btn-primary, input[type="submit"] */
+.btn-primary,
+input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+}
