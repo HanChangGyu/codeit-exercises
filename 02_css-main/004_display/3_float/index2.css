@@ -1,0 +1,36 @@
+/* 부모 상자: 자식들의 높이를 인지하지 못하는 병에 걸렸어요! */
+.news-container {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+
+  /* [미션 1] 자식이 둥둥 떠 있어도 부모가 높이를 잃지 않게 만드는 
+     '마법의 속성'을 적으세요. (BFC를 형성하는 법!) */
+  overflow: hidden;
+}
+
+/* 둥둥 떠다닐 이미지 상자 */
+.photo-box {
+  width: 150px;
+  height: 150px;
+  background-color: #3498db;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+
+  /* [미션 2] 이 상자를 왼쪽 벽으로 밀어붙여서 글자가 오른쪽으로 
+     흐르게 만드세요. */
+  float: left;
+
+  /* [미션 3] 글자와 상자가 너무 달라붙으면 답답하겠죠? 
+     오른쪽과 아래쪽에 적당한 거리를 두세요. */
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.article-text {
+  line-height: 1.6;
+  color: #333;
+}
