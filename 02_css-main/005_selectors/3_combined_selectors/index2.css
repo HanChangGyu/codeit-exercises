@@ -1,0 +1,41 @@
+/* [미션 1] .badge 공통 스타일을 설계하세요.
+  - 모든 배지의 기본 뼈대입니다.
+  - 여백: 상하 5px, 좌우 12px
+  - 글자 크기: 12px, 굵게(bold)
+  - 모서리: 20px (알약 모양)
+  - 배경색: #eee, 글자색: #666 (기본 회색)
+  - display: inline-block (글자 길이에 맞게 상자 크기 조절)
+*/
+.badge {
+  /* 여기에 코드를 작성하세요 */
+  padding: 5px 15px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 20px;
+  background-color: #eee;
+  color: #666;
+  display: inline-block;
+}
+
+/* [미션 2] .badge이면서 동시에 .new인 상태를 조준하세요
+  - 신규 상품은 눈에 띄어야 합니다.
+  - 배경색: #ebf5ff (연한 파랑)
+  - 글자색: #007bff (진한 파랑)
+  - 테두리: 1px solid #007bff
+*/
+.badge.new {
+  background-color: #ebf5ff;
+  color: #007bff;
+  border: 1px solid #007bff;
+}
+/* [미션 3] .badge이면서 동시에 .sold-out인 상태를 조준하세요 (붙여 쓰기!)
+  - 품절은 경고의 의미를 담습니다.
+  - 배경색: #fff5f5 (연한 빨강)
+  - 글자색: #ff4d4f (진한 빨강)
+  - 테두리: 1px solid #ff4d4f
+*/
+.badge.sold-out {
+  background-color: #fff5f5;
+  color: #ff4d4f;
+  border: 1px solid #ff4d4f;
+}
