@@ -1,9 +1,19 @@
 /* ========== 여기에 CSS를 작성하세요 ========== */
 
 .container {
+  background-color: #eee;
+  border: 2px solid #333;
+  padding: 10px;
+  overflow: hidden;
 }
 
 .image-box {
+  width: 100px;
+  height: 100px;
+  background-color: skyblue;
+  float: left; /* 원래는 이미지가 위로 글자가 그 아래로 오는데
+                   이렇게 left로 하니까 이미지가 왼쪽에 박혀있고 글자가 오른쪽으로 옴*/
+  margin-right: 20px;
 }
 
 .text-content {
@@ -11,4 +21,7 @@
 }
 
 .next-section {
+  background-color: #ffccbc;
+  padding: 20px;
+  margin-top: 20px;
 }
