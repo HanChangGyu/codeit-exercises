@@ -2,16 +2,32 @@
 /* 클래스, 자손, 체이닝(.btn.btn-cart) 활용 */
 
 .product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
 }
 
 .product-name {
+  font-size: 18px;
+  margin: 15px;
 }
 
 .product-price {
+  font-size: 16px;
+  color: #555;
+  margin: 0 15px 15px;
 }
 
 .btn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 .btn.btn-cart {
+  background-color: #333;
+  color: white;
 }
