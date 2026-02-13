@@ -2,14 +2,18 @@
 /* 태그 → 클래스 → 아이디 → (같은 선택자면) 코드 순서 */
 
 h1 {
+  color: gray;
 }
 
 .main-title {
+  color: blue;
 }
 
 #title {
+  color: green;
 }
 
 /* 같은 클래스 한 번 더 (나중에 쓴 orange가 blue를 덮어씀) */
 .main-title {
+  color: orange;
 }
