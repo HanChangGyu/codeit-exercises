@@ -1,0 +1,70 @@
+/* 기본 초기화 */
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+/* ========== [미션: 그리드 배치하기] ========== */
+.dashboard {
+  /* 1. 그리드를 선언하세요. */
+  display: grid;
+
+  /* 2. 기둥(Column)을 2개 만드세요. (왼쪽: 200px, 오른쪽: 나머지 전부) */
+  /* 1층(헤더)은 80px, 4층(푸터)은 60px로 고정하고, 가운데 2~3층은 남는 높이를 사이좋게 나눠 쓰겠다는 거야. */
+  grid-template-columns: 200px 1fr;
+  /* 3. 줄(Row)을 4줄 만드세요. (80px, 1fr, 1fr, 60px) */
+  grid-template-rows: 80px 1fr 1fr 60px;
+  /* 4. 아래 지도를 참고해 grid-template-areas를 작성하세요.
+     - 1행: 헤더가 전체 차지
+     - 2행: 왼쪽 사이드바, 오른쪽 메인
+     - 3행: 왼쪽 사이드바(확장), 오른쪽 정보(extra)
+     - 4행: 푸터가 전체 차지
+  */
+
+  grid-template-areas:
+    "header header"
+    "sidebar content"
+    "sidebar extra"
+    "footer footer";
+  gap: 15px;
+  height: calc(100vh - 40px);
+}
+
+/* 5. 각 클래스와 그리드 영역 이름을 연결하세요. */
+.header {
+  grid-area: header;
+  background: #3498db;
+  color: white;
+}
+.sidebar {
+  grid-area: sidebar;
+  background: #2c3e50;
+  color: white;
+}
+.content {
+  /* 여기에 적절한 grid-area를 연결하세요 */
+  grid-area: content;
+  background: white;
+  border: 1px solid #ddd;
+}
+.extra {
+  /* 여기에 적절한 grid-area를 연결하세요 */
+  grid-area: extra;
+  background: #ecf0f1;
+  border: 1px solid #ddd;
+}
+.footer {
+  /* 여기에 적절한 grid-area를 연결하세요 */
+  grid-area: footer;
+  background: #27ae60;
+  color: white;
+}
+
+/* 공통: 내용물 중앙 정렬 (이건 덤이야!) */
+.dashboard > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
