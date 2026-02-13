@@ -1,0 +1,35 @@
+/* [미션 1] 가장 낮은 점수 (태그 선택자: 1점)
+   - h1 태그의 색상을 gray로 설정하세요. 
+*/
+h1 {
+  color: gray;
+}
+/* [미션 2] 중간 점수 (클래스 선택자: 10점)
+   - .main-title 클래스의 색상을 blue로 설정하세요. 
+*/
+.main-title {
+  color: blue;
+}
+
+/* [미션 3] 높은 점수 (아이디 선택자: 100점)
+   - #hero-title 아이디의 색상을 green으로 설정하세요. 
+*/
+/* #hero-title {
+  color: green; 
+} */
+
+/* [미션 4] 순서(Order) 테스트 (같은 클래스: 10점)
+   - 다시 한번 .main-title의 색상을 orange로 설정하세요. 
+   - 과연 미션 2의 blue와 미션 4의 orange 중 누가 이길까요?
+*/
+.main-title {
+  color: orange;
+}
+
+/* [미션 5] 명시도 체이닝 (클래스 2개 점수: 20점)
+   - .card-container 안에 있는 .main-title을 선택해서
+     font-style: italic을 적용하세요.
+*/
+.card-container .main-title {
+  font-style: italic;
+}
